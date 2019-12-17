@@ -15,10 +15,10 @@ function setup() {
   beatLength = 16;
   cellWidth = width/beatLength;
   cursorPos = 0;
-  
+
   kick2 = loadSound('assets/808kick.wav', () => {});
   snare2 = loadSound('assets/Snare.wav', () => {});
-  hh = playHiHat();
+  hh = loadSound("assets/hat.wav");
   shaker = loadSound('assets/shaker.wav', () => {});
   oh = loadSound('assets/oh.wav', () => {});
   fx = loadSound('assets/fx.mp3', () => {});
