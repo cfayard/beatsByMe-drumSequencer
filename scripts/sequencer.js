@@ -17,11 +17,17 @@ function setup() {
   cursorPos = 0;
   
   kick2 = loadSound('assets/808kick.wav', () => {});
+  // kick2 = playKick();
   snare2 = loadSound('assets/Snare.wav', () => {});
-  hh = playHiHat();
+  // snare2 = playSnare();
+  hh = loadSound('assets/hat.wav', () => {});
+  // hh = playHiHat();
   shaker = loadSound('assets/shaker.wav', () => {});
+  // shaker = playChirp();
   oh = loadSound('assets/oh.wav', () => {});
+  // oh = playTrump();
   fx = loadSound('assets/fx.mp3', () => {});
+  // fx = playLowBass();
     
 kickPat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 snarePat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
