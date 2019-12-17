@@ -15,6 +15,7 @@ function setup() {
   beatLength = 16;
   cellWidth = width/beatLength;
   cursorPos = 0;
+
   
   kick808 = loadSound('assets/808kick.wav', () => {});
   // kick808 = playKick();
@@ -28,6 +29,15 @@ function setup() {
   // trumpet = playTrump();
   subBass = loadSound('assets/410149__screamstudio__kick-drum.wav', () => {});
   // subBass = playLowBass();
+
+
+  kick2 = loadSound('assets/808kick.wav', () => {});
+  snare2 = loadSound('assets/Snare.wav', () => {});
+  hh = loadSound("assets/hat.wav");
+  shaker = loadSound('assets/shaker.wav', () => {});
+  oh = loadSound('assets/oh.wav', () => {});
+  fx = loadSound('assets/fx.mp3', () => {});
+
     
 kick808Pat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 snarePat= [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
