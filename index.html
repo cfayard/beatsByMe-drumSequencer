@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    
+    <title>Make🔥Beats!</title>
+</head>
+<body>
+    <header>
+        <h1>🔊beatsByME🔊</h1>
+    </header>
+   
+    
+    <div class="pads">
+        
+        <div class="kick">
+            <button 
+                onclick= "playKick()"> 
+            </button>
+        </div>
+        <div class="snare">
+            <button 
+                onclick= "playSnare()">
+            </button>
+        </div>
+        <div class="hiHat">
+            <button 
+                onclick= "playHiHat()">
+            </button>
+        </div>
+        <div class="chirp">
+            <button 
+                onclick= "playChirp()">
+            </button>
+        </div>
+        <div class="trump">
+            <button 
+                onclick= "playTrump()">
+            </button>
+        </div>
+        <div class="lowBass">
+            <button 
+                onclick= "playLowBass()">
+            </button>
+        </div>
+    </div>
+    <div class="vz-wrapper">
+        <audio id="myAudio" src="assets/Leonard Cohen - It Seemed the Better Way (Official Audio).mp3" data-author="" data-title=""></audio>
+        <div class="vz-wrapper -canvas">
+        <canvas id="myCanvas" width="800" height="400"></canvas>
+    </div>
+</div> 
+    <script src="visualizer.js"></script>
+    <script src="sounds.js"></script>
+    <script src="index.js"></script> 
+    <div class="sequencerBox">  
+        <script src="sequencer.js"></script>
+    </div>
+    
+</body>
+</html>
+    
+
+
+
+
