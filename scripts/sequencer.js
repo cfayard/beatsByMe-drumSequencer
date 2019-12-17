@@ -78,7 +78,7 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   drums.addPhrase('seq', sequence, sequencerPattern);
  
   bpmCTRL = createSlider(30, 600, 80, 1);
-  bpmCTRL.position(530,550); //Placement of slider
+  bpmCTRL.position("fixed", 500, 500); //Placement of slider
   bpmCTRL.input(() => {drums.setBPM(bpmCTRL.value())});
   drums.setBPM('90');
   
@@ -173,5 +173,5 @@ function sequence(time, beatIndex) {
 function drawPlayhead(beatIndex) {
   stroke('rgba(131, 11, 39, 0.461)'); //changes color of moving column
   fill(255, 0, 0, 30); //fourth value transparency
-  rect((beatIndex-0.25) * cellWidth, 0, cellWidth, height);
+  rect((beatIndex-1) * cellWidth, 0, cellWidth, height);
 }
