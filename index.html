@@ -9,47 +9,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     
+    
     <title>Make🔥Beats!</title>
 </head>
 <body>
     <header>
         <h1>🔊beatsByME🔊</h1>
     </header>
-   
-    
     <div class="pads">
-        
-        <div class="kick">
+        <div class="hiHat">
             <button 
-                onclick= "playKick()"> 
+                onclick= "playHiHat()"> Hi-hat
             </button>
         </div>
         <div class="snare">
             <button 
-                onclick= "playSnare()">
-            </button>
-        </div>
-        <div class="hiHat">
-            <button 
-                onclick= "playHiHat()">
-            </button>
-        </div>
-        <div class="chirp">
-            <button 
-                onclick= "playChirp()">
-            </button>
-        </div>
-        <div class="trump">
-            <button 
-                onclick= "playTrump()">
+                onclick= "playSnare()"> Snare
             </button>
         </div>
         <div class="lowBass">
             <button 
-                onclick= "playLowBass()">
+                onclick= "playLowBass()"> BOOM!
             </button>
         </div>
+         <div class="chirp">
+            <button 
+                onclick= "playChirp()"> Synth
+            </button>
+        </div>
+        <div class="trump">
+            <button 
+                onclick= "playTrump()"> Horn
+            </button>
+        </div>
+        
+        <div class="kick">
+            <button 
+                onclick= "playKick()"> Kick
+            </button>
+        </div>
+    </div>    
+<div 
+    class="vz-wrapper">
+    <audio id="myAudio" src="assets/207555__patricklieberkind__deep-cinematic-rumble-stereo.wav" data-author="" data-title=""></audio>
+    <div class="vz-wrapper -canvas">
+        <canvas id="myCanvas" width="600" height="600"></canvas>
     </div>
+
+    <div class = "sequencer">
+        <script 
+            src="/scripts/sequencer.js">
+        </script>
+    </div>
+</div>
+
+    
+    <script src="/scripts/sounds.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/visualizer.js"></script> 
+    
+    <!-- <script src="/scripts/sequencer.js"></script> -->
+    
+
     <div class="vz-wrapper">
         <audio id="myAudio" src="assets/Leonard Cohen - It Seemed the Better Way (Official Audio).mp3" data-author="" data-title=""></audio>
         <div class="vz-wrapper -canvas">
@@ -65,6 +86,7 @@
         <script src="/scripts/sequencer.js"></script>
     </div>
     <!-- </div> -->
+
     
 </body>
 </html>
