@@ -9,7 +9,7 @@
     }
     const lowBassFetch = fetchPreview(346316)
     const trumpFetch = fetchPreview(53933)
-    const chirpFetch = fetchPreview(68397)
+    const chirpFetch = fetchPreview(115525)
     const hiHatFetch = fetchPreview(7634)
     const snareFetch = fetchPreview(238008)
     const kickFetch = fetchPreview(410149)

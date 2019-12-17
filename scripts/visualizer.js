@@ -304,8 +304,8 @@ AUDIO.VISUALIZER = (function () {
         var cx = this.canvas.width / 2;
         var cy = this.canvas.height / 2;
         var radius = 140;
-        var maxBarNum = Math.floor((radius * 16 * Math.PI) / (this.barWidth + this.barSpacing));
-        var slicedPercent = Math.floor((maxBarNum * 50) / 100);
+        var maxBarNum = Math.floor((radius * 9 * Math.PI) / (this.barWidth + this.barSpacing));
+        var slicedPercent = Math.floor((maxBarNum * 30) / 50);
         var barNum = maxBarNum - slicedPercent;
         var freqJump = Math.floor(this.frequencyData.length / maxBarNum);
 
@@ -314,7 +314,7 @@ AUDIO.VISUALIZER = (function () {
             var alfa = (i * 16 * Math.PI ) / maxBarNum;
             var beta = (3 * 95 - this.barWidth) * Math.PI / 540;
             var x = 0;
-            var y = radius - (amplitude / 32 - this.barHeight);
+            var y = radius - (amplitude / 1.5 - this.barHeight);
             var w = this.barWidth;
             var h = amplitude / 6 + this.barHeight;
 
@@ -397,12 +397,12 @@ document.addEventListener('DOMContentLoaded', function () {
         audio: 'myAudio',
         canvas: 'myCanvas',
         style: 'lounge',
-        barWidth: 10,
-        barHeight: 70,
+        barWidth: 6,
+        barHeight: 80,
         barSpacing: 1,
-        barColor: 'lime',
-        shadowBlur: 40,
-        shadowColor: 'lightgreen',
+        barColor: 'springgreen',
+        shadowBlur: 90,
+        shadowColor: 'crimson',
         font: ['0px', 'Lilita One']
     });
 }, false);
