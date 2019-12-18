@@ -19,24 +19,24 @@ function setup() {
   
   kick808 = loadSound('assets/808kick.wav', () => {});
   // kick808 = playKick();
-  snare2 = loadSound('assets/238008__alexthegr81__00-meatysnare.wav', () => {});
+  snare2 = loadSound('assets/Snare.wav', () => {});
   // snare2 = playSnare();
-  hh = loadSound('assets/7634__ls__loop1-stripped-down-againrecycled-010.wav ', () => {});
+  hh = loadSound('assets/hat.wav', () => {});
   // hh = playHiHat();
   midBassSeq = loadSound('assets/115525__ongitak__bass-stab-11.wav', () => {});
   // midBassSeq = playChirp();
-  trumpet = loadSound('assets/53933__meutecee__trumpethit03.wav', () => {});
+  trumpet = loadSound('assets/waterDrop.wav', () => {});
   // trumpet = playTrump();
   subBass = loadSound('assets/410149__screamstudio__kick-drum.wav', () => {});
   // subBass = playLowBass();
 
 
-  kick2 = loadSound('assets/808kick.wav', () => {});
-  snare2 = loadSound('assets/Snare.wav', () => {});
-  hh = loadSound("assets/hat.wav");
-  shaker = loadSound('assets/shaker.wav', () => {});
-  oh = loadSound('assets/oh.wav', () => {});
-  fx = loadSound('assets/fx.mp3', () => {});
+  // kick808 = loadSound('assets/808kick.wav', () => {});
+  // snare2 = loadSound('assets/Snare.wav', () => {});
+  // hh = loadSound("assets/hat.wav");
+  // shaker = loadSound('assets/shaker.wav', () => {});
+  // oh = loadSound('assets/oh.wav', () => {});
+  // fx = loadSound('assets/fx.mp3', () => {});
 
     
 kick808Pat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

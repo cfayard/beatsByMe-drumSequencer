@@ -1,19 +1,28 @@
  * {
-   margin: 10px; 
-   padding: 10px;
-   box-sizing: border-box; 
-   font-family: 'Lilita One', cursive;
-   background-color: limegreen;
+  margin: 10px; 
+  padding: 10px;
+  box-sizing: border-box; 
+  font-family: 'Lilita One', cursive;
+  /* border-collapse: collapse; */
+  /* background-color: rgb(201, 74, 45); */
+  @media (min-width: 768px) and (max-width: 1200px)
+   
  }
-  
+ 
+html {
+  background-image: url("images/orange_clouds.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
  
 header h1 {
   margin: 0px 0px 0px 0px;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: lightgreen;
   background-color: rgba(131, 11, 39, 0.461);
-  border: lightgreen;
+  border: rgb(211, 63, 9);
   border-style: solid;
 }
 
@@ -26,6 +35,14 @@ header h1 {
   /* justify-items: center; */
   /* position: relative; */
  /* background-color: cornsilk; */
+}
+
+.pads:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 .p5Canvas {
@@ -49,17 +66,18 @@ header h1 {
 
 button {
   background-color: rgba(131, 11, 39, 0.461); /* Green */
-  border: lightgreen;
-  border-style: solid;
+  /* border: lightgreen; */
+  /* border-style: solid; */
   color: lightgreen;
   padding: 50px 50px;
   margin: auto;
   /* text-align: center; */
   /* text-decoration: none; */
   /* display: inline-flexbox; */
-  border-radius: 25%;
+  border-radius: 50%;
   /* font-size: 16px; */
   text-align: center;
+  /* border: none; */
 }
 body {
   margin: 0;
@@ -84,13 +102,13 @@ body {
 
 .vz-wrapper.-canvas {
    /* position: absolute;  */
-   top: 50%; 
-    left: 50%; 
+   /* top: 50%;  */
+    /* left: 50%;  */
   /* transform: translate(-50%, -50%);  */
-  height: initial; 
-  width: initial; 
-  background: transparent;
-  box-shadow: none; 
+  /* height: initial;  */
+  /* width: initial;  */
+  /* background: transparent; */
+  /* box-shadow: none;  */
 
   display: flex;
   flex-direction: column;
@@ -103,3 +121,10 @@ body {
   text-align: center;
 }
 
+.footer {
+  position: absolute;
+  /* display: flex;  */
+  justify-content: flex-end;
+  text-align: center;
+  bottom: 0;
+}
