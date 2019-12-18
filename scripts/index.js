@@ -8,11 +8,11 @@
         });
     }
     const lowBassFetch = fetchPreview(115525)
-    const trumpFetch = fetchPreview(53933)
+    const trumpFetch = fetchPreview(273870)
     const chirpFetch = fetchPreview(115525)
-    const hiHatFetch = fetchPreview(7634)
-    const snareFetch = fetchPreview(238008)
-    const kickFetch = fetchPreview(410149)
+    const hiHatFetch = fetchPreview(496888)
+    const snareFetch = fetchPreview(496889)
+    const kickFetch = fetchPreview(496890)
     
     const kick = document.querySelector(".kick")
     kick.src = soundMenu.kick
