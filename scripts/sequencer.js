@@ -80,7 +80,7 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   bpmCTRL = createSlider(30, 600, 80, 1);
   bpmCTRL.position("fixed", 500, 500); //Placement of slider
   bpmCTRL.input(() => {drums.setBPM(bpmCTRL.value())});
-  drums.setBPM('90');
+  drums.setBPM('60');
   
   drawMatrix();
 }  

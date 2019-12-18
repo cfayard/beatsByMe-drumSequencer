@@ -3,7 +3,7 @@
    padding: 10px;
    box-sizing: border-box; 
    font-family: 'Lilita One', cursive;
-   background-color: lightgreen;
+   background-color: limegreen;
  }
   
  
@@ -59,6 +59,7 @@ button {
   /* display: inline-flexbox; */
   border-radius: 25%;
   /* font-size: 16px; */
+  text-align: center;
 }
 body {
   margin: 0;
