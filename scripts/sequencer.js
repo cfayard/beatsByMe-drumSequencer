@@ -29,15 +29,6 @@ function setup() {
   // trumpet = playTrump();
   subBass = loadSound('assets/410149__screamstudio__kick-drum.wav', () => {});
   // subBass = playLowBass();
-
-
-  // kick808 = loadSound('assets/808kick.wav', () => {});
-  // snare2 = loadSound('assets/Snare.wav', () => {});
-  // hh = loadSound("assets/hat.wav");
-  // shaker = loadSound('assets/shaker.wav', () => {});
-  // oh = loadSound('assets/oh.wav', () => {});
-  // fx = loadSound('assets/fx.mp3', () => {});
-
     
 kick808Pat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 snarePat= [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
@@ -77,16 +68,16 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   drums.addPhrase(subBassPhrase);
   drums.addPhrase('seq', sequence, sequencerPattern);
  
-  bpmCTRL = createSlider(30, 600, 80, 1);
+  bpmCTRL = createSlider(60, 170, 80, 1);
   bpmCTRL.position("fixed", 500, 500); //Placement of slider
   bpmCTRL.input(() => {drums.setBPM(bpmCTRL.value())});
-  drums.setBPM('60');
+  drums.setBPM('90');
   
   drawMatrix();
-  const button1 = document.querySelector(".js-restart");
-  button1.addEventListener("click", ()=> {
-    drums.loop();
-  })
+  // const button1 = document.querySelector(".js-restart");
+  // button1.addEventListener("click", ()=> {
+  //   drums.loop();
+  // })
 }  
 
 function keyPressed() {
@@ -101,6 +92,7 @@ function keyPressed() {
     } else {
          console.log('oops, be patient as the drums load...');
     }
+    getAudioContext().resume() 
   }
 }
 
@@ -179,3 +171,9 @@ function drawPlayhead(beatIndex) {
   fill(255, 0, 0, 30); //fourth value transparency
   rect((beatIndex-1) * cellWidth, 0, cellWidth, height);
 }
+
+// function touchStarted() {
+//   if (getAudioContext().state !== 'running') {
+//     getAudioContext().resume();
+//   }
+// }
