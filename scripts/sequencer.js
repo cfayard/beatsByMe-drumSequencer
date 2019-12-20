@@ -10,7 +10,7 @@ let sequncerPattern;
 let cursorPos;
 
 function setup() {
-  canvas = createCanvas(640, 200);
+  canvas = createCanvas(1100, 500);
   canvas.mousePressed(canvasPressed);
   beatLength = 16;
   cellWidth = width/beatLength;
