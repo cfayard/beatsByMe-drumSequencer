@@ -83,6 +83,10 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   drums.setBPM('60');
   
   drawMatrix();
+  const button1 = document.querySelector(".js-restart");
+  button1.addEventListener("click", ()=> {
+    drums.loop();
+  })
 }  
 
 function keyPressed() {

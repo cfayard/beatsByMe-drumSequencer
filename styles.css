@@ -16,14 +16,19 @@ html {
   min-height: 100vh;
 }
  
-header h1 {
-  margin: 0px 0px 0px 0px;
-  text-align: center;
+.header {
+  /* margin: 0px 0px 0px 0px; */
+  /* text-align: center; */
   font-size: 60px;
   color: lightgreen;
-  background-color: rgba(131, 11, 39, 0.461);
+  /* background-color: rgba(131, 11, 39, 0.461); */
   border: rgb(211, 63, 9);
   border-style: solid;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-image: url(images/sunBackground.jpeg);
+  
+  
 }
 
 .pads {

@@ -375,6 +375,7 @@ AUDIO.VISUALIZER = (function () {
      * @public
      */
     function getInstance (cfg) {
+        console.log("aaabbbbbb");
         return _createVisualizer(cfg)();
     }
 
@@ -407,6 +408,25 @@ document.addEventListener('DOMContentLoaded', function () {
         font: ['0px', 'Lilita One']
     });
 }, false);
+
+// // window.addEventListener('click', function () {
+// //     'use strict';
+
+//     AUDIO.VISUALIZER.getInstance({
+//         autoplay: true,
+//         loop: true,
+//         audio: 'myAudio',
+//         canvas: 'myCanvas',
+//         style: 'lounge',
+//         barWidth: 6,
+//         barHeight: 80,
+//         barSpacing: 1,
+//         barColor: 'springgreen',
+//         shadowBlur: 90,
+//         shadowColor: 'crimson',
+//         font: ['0px', 'Lilita One']
+//     });
+// }, false);
 
 // var AUDIO = AUDIO || {};
 
